@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.brianr.keuanganhimasif">
 
     <application
@@ -16,7 +17,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login"></activity>
+        <activity android:name=".Login" />
+        <activity android:name=".TambahDanaMasuk" />
+        <activity android:name=".TambahUangKas" />
+        <activity android:name=".TambahDanaKeluar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.content.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GuestActivity"
+            android:label="@string/title_activity_guest"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

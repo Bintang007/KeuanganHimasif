@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F1F5"
+    tools:context="com.example.brianr.keuanganhimasif.TambahDanaMasuk">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="@string/app_name"
+        app:titleTextColor="#FFF">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="DANA MASUK"
+        android:textAlignment="center"
+        android:textColor="#1989AC"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="200dp"
+        android:hint="Judul" />
+    <TextView
+        android:id="@+id/showdate"
+        android:layout_alignParentLeft="@+id/pickdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="20dp"
+        android:text="qweqweqweqew"/>
+    <Button
+        android:id="@+id/pickdate"
+        android:layout_marginTop="280dp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:onClick="datePicker"/>
+    <EditText
+        android:id="@+id/dana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="350dp"
+        android:hint="Jumlah Uang" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/button"
+        android:text="SIMPAN"
+        android:textColor="#FFF" />
+
+
+</RelativeLayout>

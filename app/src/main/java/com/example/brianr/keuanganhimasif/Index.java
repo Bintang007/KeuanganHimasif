@@ -4,8 +4,11 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -14,6 +17,7 @@ public class Index extends AppCompatActivity {
     TextView judul;
     Typeface tf1;
     Button login, guest;
+    Animation frombottom,fromtop;
     RelativeLayout layout;
     AnimationDrawable animationDrawable;
     @Override
@@ -29,11 +33,22 @@ public class Index extends AppCompatActivity {
         guest = (Button) findViewById(R.id.guest);
         login.setTypeface(tf1);
         guest.setTypeface(tf1);
-
+        frombottom = AnimationUtils.loadAnimation(this, R.anim.frombottom);
+        fromtop = AnimationUtils.loadAnimation(this, R.anim.fromtop);
+        judul.setAnimation(fromtop);
+        guest.setAnimation(frombottom);
+        login.setAnimation(frombottom);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), Login.class);
+                startActivity(i);
+            }
+        });
+        guest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),GuestActivity.class);
                 startActivity(i);
             }
         });

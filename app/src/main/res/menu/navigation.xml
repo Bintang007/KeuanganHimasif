@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dana_masuk"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_dana_masuk" />
+
+    <item
+        android:id="@+id/navigation_uang_kas"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_uang_kas" />
+
+    <item
+        android:id="@+id/navigation_dana_keluar"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_dana_keluar" />
+
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Judul"
+        android:textColor="#000"
+        android:id="@+id/judul"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_below="@id/judul"
+        android:text="Tanggal"
+        android:textColor="#000"
+        android:id="@+id/tanggal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_below="@+id/tanggal"
+        android:layout_alignParentRight="true"
+        android:id="@+id/uang"/>
+
+</RelativeLayout>

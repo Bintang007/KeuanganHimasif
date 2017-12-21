@@ -16,7 +16,7 @@
         android:orientation="vertical"
         android:layout_centerInParent="true"
         android:layout_width="match_parent"
-        android:layout_height="350dp">
+        android:layout_height="400dp">
 
         <TextView
             android:id="@+id/judul"
@@ -26,22 +26,22 @@
             android:layout_height="wrap_content"
             android:text="SISTEM INFORMASI\n KEUANGAN HIMASIF"
             android:textAlignment="center"
-            android:textColor="#283E56"
-            android:fontFamily="sans-serif"/>
-        <EditText
+            android:textColor="#283E56" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_floatingLabel="highlight"
             android:id="@+id/username"
             android:layout_marginTop="20dp"
-            android:paddingBottom="20dp"
             android:hint="Username"
             android:drawableStart="@drawable/ic_account_circle_black_24dp"
             android:drawablePadding="10dp"
+            android:inputType="textPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <EditText
+        <com.rengwuxian.materialedittext.MaterialEditText
+            app:met_floatingLabel="highlight"
             android:hint="Password"
-            android:paddingBottom="20dp"
             android:id="@+id/password"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:drawableStart="@drawable/ic_lock_black_24dp"
             android:drawablePadding="10dp"
             android:layout_width="match_parent"
