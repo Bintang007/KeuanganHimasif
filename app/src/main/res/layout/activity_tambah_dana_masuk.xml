@@ -38,6 +38,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="200dp"
+        android:textColor="#000"
         android:hint="Judul" />
     <TextView
         android:id="@+id/showdate"
@@ -47,7 +48,8 @@
         android:layout_marginTop="290dp"
         android:layout_marginLeft="40dp"
         android:textSize="20dp"
-        android:text="qweqweqweqew"/>
+        android:textColor="#000"
+        android:text="Tanggal"/>
     <Button
         android:id="@+id/pickdate"
         android:layout_marginTop="280dp"
@@ -62,6 +64,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="350dp"
+        android:textColor="#000"
         android:hint="Jumlah Uang" />
 
     <Button
