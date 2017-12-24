@@ -37,7 +37,7 @@ public class TambahDanaMasuk extends AppCompatActivity implements DatePickerDial
     }
 
     private void setDate(final Calendar calendar) {
-        final DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM);
+        DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM);
         ((TextView) findViewById(R.id.showdate)).setText(dateFormat.format(calendar.getTime()));
     }
 

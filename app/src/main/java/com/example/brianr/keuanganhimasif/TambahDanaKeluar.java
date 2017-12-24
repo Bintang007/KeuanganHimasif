@@ -25,15 +25,14 @@ public class TambahDanaKeluar extends AppCompatActivity implements DatePickerDia
         tf1 = Typeface.createFromAsset(getAssets(), "fonts/Roboto-Regular.ttf");
         title.setTypeface(tf1);
     }
-
     public void datePicker(View view) {
-        TambahDanaMasuk.DatePickerFragment fragment = new TambahDanaMasuk.DatePickerFragment();
-        fragment.show(getFragmentManager(), "date");
+        DatePickerFragment fragment = new DatePickerFragment();
+        fragment.show(getFragmentManager(),"date");
 
     }
 
     private void setDate(final Calendar calendar) {
-        final DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM);
+         DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM);
         ((TextView) findViewById(R.id.showdate)).setText(dateFormat.format(calendar.getTime()));
     }
 
@@ -52,7 +51,7 @@ public class TambahDanaKeluar extends AppCompatActivity implements DatePickerDia
             int day = c.get(Calendar.DAY_OF_MONTH);
             return new DatePickerDialog(getActivity(),
                     (DatePickerDialog.OnDateSetListener)
-                            getActivity(), year, month, day);
+                            getActivity(),year,month,day);
         }
     }
 }
