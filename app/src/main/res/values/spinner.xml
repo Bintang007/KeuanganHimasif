@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Tanggal">
+        <item>Januari 2018</item>
+        <item>Februari 2018</item>
+        <item>Maret 2018</item>
+        <item>April 2018</item>
+        <item>Mei 2018</item>
+        <item>Juni 2018</item>
+        <item>Juli 2018</item>
+        <item>Agustus 2018</item>
+        <item>September 2018</item>
+        <item>Oktober 2018</item>
+        <item>November 2018</item>
+        <item>Desember 2018</item>
+    </string-array>
+</resources>

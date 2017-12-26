@@ -32,4 +32,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.github.varunest:sparkbutton:1.0.5'
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'br.com.simplepass:loading-button-android:1.7.2'
 }

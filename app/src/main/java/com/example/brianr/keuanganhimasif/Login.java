@@ -3,10 +3,12 @@ package com.example.brianr.keuanganhimasif;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
+import android.transition.CircularPropagation;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -15,12 +17,14 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import br.com.simplepass.loading_button_lib.customViews.CircularProgressButton;
+
 public class Login extends AppCompatActivity {
     TextView judul;
     Typeface tf1;
     EditText username, password;
     CheckBox hintpass;
-    Button login;
+    CircularProgressButton login;
     RelativeLayout layout;
     AnimationDrawable animationDrawable;
 
@@ -47,14 +51,33 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
-        login = (Button) findViewById(R.id.login);
+        login = (CircularProgressButton) findViewById(R.id.login);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent i = new Intent(Login.this, MainActivity.class);
-                startActivity(i);
+            public void onClick(View v) {
+                AsyncTask<String,String,String> demoLogin = new AsyncTask<String, String, String>() {
+                    @Override
+                    protected String doInBackground(String... strings) {
+                        try{
+                            Thread.sleep(3000);
+                        } catch (InterruptedException e){
+                            e.printStackTrace();
+                        }
+                        return "done";
+                    }
+                    @Override
+                    protected void onPostExecute(String s){
+                        if (s.equals("done")){
+                            Intent i = new Intent(Login.this, MainActivity.class);
+                            startActivity(i);
+                        }
+                    }
+                };
+                login.startAnimation();
+                demoLogin.execute();
             }
         });
+
         layout = (RelativeLayout) findViewById(R.id.layout);
         animationDrawable = (AnimationDrawable) layout.getBackground();
         animationDrawable.setEnterFadeDuration(4500);

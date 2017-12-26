@@ -49,6 +49,7 @@
         android:textColor="#000"
         android:text="Tanggal"/>
     <Button
+        android:background="@drawable/ic_arrow_drop_down_black_24dp"
         android:id="@+id/pickdate"
         android:layout_marginTop="280dp"
         android:layout_width="60dp"

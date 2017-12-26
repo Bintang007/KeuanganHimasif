@@ -55,7 +55,7 @@
             android:layout_below="@id/password"
             android:layout_alignParentStart="true"
             android:textSize="12.5dp"/>
-        <Button
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
             android:id="@+id/login"
             android:layout_gravity="center"
             android:background="@drawable/button"
@@ -63,7 +63,10 @@
             android:layout_marginTop="20dp"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:textColor="#FFF"/>
+            android:textColor="#FFF"
+            app:spinning_bar_width="4dp"
+            app:spinning_bar_padding="6dp"
+            app:spinning_bar_color="#FFF"/>
 
     </LinearLayout>
 </RelativeLayout>
